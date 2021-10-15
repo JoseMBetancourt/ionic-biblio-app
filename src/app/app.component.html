@@ -1,0 +1,37 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button
+      routerLinkActive="tab-selected"
+      routerLink="/home"
+      class="ios"
+      tab="home"
+    >
+      <ion-icon name="happy"></ion-icon>
+      <ion-label>User</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button
+      routerLinkActive="tab-selected"
+      routerLink="/bibliografias"
+      class="ios"
+      tab="bibliografias"
+    >
+      <ion-icon name="list"></ion-icon>
+      <ion-label>Bibliografías</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button
+      routerLinkActive="tab-selected"
+      routerLink="/make-appointment"
+      class="ios"
+      tab="make-appointment"
+    >
+      <ion-icon name="add-circle"></ion-icon>
+      <ion-label>Agregar Bibliografía</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

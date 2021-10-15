@@ -1,0 +1,7 @@
+{
+  "name": "MyBiblioApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

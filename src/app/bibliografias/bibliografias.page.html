@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> My Biblio App </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ios list-ios hydrated">
+    <ion-list-header class="ios hydrated">
+      Gestión de Bibliografías
+    </ion-list-header>
+
+    <ion-item *ngFor="let booking of Bookings" class="user-list">
+      <ion-label>
+        <h5><ion-icon name="book"></ion-icon> {{booking.titulopub}}</h5>
+        <h5><ion-icon name="people"></ion-icon> {{booking.autores}}</h5>
+        <h5><ion-icon name="time"></ion-icon> {{booking.anyopub}}</h5>
+      </ion-label>
+
+      <div class="item-note" item-end>
+        <button
+          ion-button
+          clear
+          [routerLink]="['/edit-appointment/', booking.$idreferencia]"
+        >
+          <ion-icon name="create" style="zoom: 2"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteBooking(booking.$idreferencia)">
+          <ion-icon name="trash" style="zoom: 2"></ion-icon>
+        </button>
+      </div>
+    </ion-item> </ion-list
+></ion-content>
